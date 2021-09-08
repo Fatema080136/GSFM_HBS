@@ -6,7 +6,6 @@ import java.text.DecimalFormat;
 /**
  * all vector calculations
  * Created by Fatema on 10/22/2016.
- * @todo redesign segmentIntersect with Additional Condition() method
  */
 public final class CVector
 {

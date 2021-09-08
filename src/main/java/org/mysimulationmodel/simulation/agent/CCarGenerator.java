@@ -121,8 +121,8 @@ public class CCarGenerator extends IBaseAgentGenerator<IBaseRoadUser>
             l_car.setMaxSpeed(( rand.nextGaussian() * m_GaussianStandardDeviationMaxSpeed + m_GaussianMeanMaxSpeed ) * m_pixelpermeter * m_environment.getTimestep());
         }*/
 
-//        l_car.setMaxSpeed( ( rand.nextGaussian() * m_GaussianStandardDeviationMaxSpeed + m_GaussianMeanMaxSpeed )
-//                *m_environment.getTimestep() );
+        // l_car.setMaxSpeed( ( rand.nextGaussian() * m_GaussianStandardDeviationMaxSpeed + m_GaussianMeanMaxSpeed )
+        //                *m_environment.getTimestep() );
         //System.out.println( l_car.getSpeed()+" initial value "+l_car.getMaxSpeed());
         l_car.setVelocity( l_car.getSpeed(), l_car.getGoalposition(), l_car.getPosition() );
 
@@ -130,7 +130,7 @@ public class CCarGenerator extends IBaseAgentGenerator<IBaseRoadUser>
         if (  l_input.m_start_cycle == 0 )
         {
             m_environment.initialset(l_car);
-            // add car to the pedestrian's list
+            // add car to the car's list
             m_environment.initialCar(l_car);
         }
         else

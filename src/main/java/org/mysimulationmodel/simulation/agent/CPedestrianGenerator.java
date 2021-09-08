@@ -151,7 +151,7 @@ public final class CPedestrianGenerator extends IBaseAgentGenerator<IBaseRoadUse
         if ( l_ped.m_start_cycle == 0 )
         {
             m_environment.initialset(l_pedestrian);
-            // add car to the pedestrian's list
+            // add pedestrian to the pedestrian's list
             m_environment.initialPedestrian(l_pedestrian);
         }
         else
