@@ -125,7 +125,7 @@ public class CGame
 
                 else
                 {
-                    l_return[0] =  -a*speed(p_speed,0.65) + b*c_speed  + distance(mindistance) - f*angle(l_angle,7);//-k*nearconflict ;//+ 4*p_decision;
+                    l_return[0] =  -a*speed(p_speed,0.65) + b*c_speed  + distance(mindistance) - f*angle(l_angle,7);
 
                     //pedestrian
                     l_return[1] = ( p_columnstrategyindicator == 1 )? 3 - speed(p_speed,0.9) : 2  + speed(p_speed,0.9)
@@ -135,9 +135,9 @@ public class CGame
 
             else
             {
-                l_return[0] = ( p_columnstrategyindicator == 1 )? -50 :  c*stopped+e*noai+ f*angle(l_angle,5);//3*l_angle;//j*p_speed +l*stopped,q + m*mindistance +
+                l_return[0] = ( p_columnstrategyindicator == 1 )? -50 :  c*stopped+e*noai+ f*angle(l_angle,5);
                 l_return[1] = ( p_columnstrategyindicator == 1 )? -50
-                        : ( p_columnstrategyindicator == 0 ) ? m_pedcontinue : angleDev(l_angle,6);//q*stopped + r*l_angle;// +toomuchdeviation(p_player2,p_player1);
+                        : ( p_columnstrategyindicator == 0 ) ? m_pedcontinue : angleDev(l_angle,6);
 
             }
 

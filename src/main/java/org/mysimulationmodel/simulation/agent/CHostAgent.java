@@ -262,13 +262,11 @@ public final class CHostAgent extends IBaseAgent<CHostAgent>
                 ArrayList<Integer> l_strategyset;
 
                 if((i.getCurrentBehavior() == 1 || j.getCurrentBehavior()== 0) && (m.size()>1 ))//|| !j.getCurrentlyPlayingWith().isEmpty()
-                {    //System.out.println("is here 2");
+                {
                     l_strategyset = new ArrayList<>();
                     l_strategyset.add(0,1); l_strategyset.add(1,0);
                 }
                 else l_strategyset = getstrategies( i, j, 2, 2, 3 );
-                //l_strategyset = getstrategies( i, j, 2, 2, 3 );
-                //System.out.println(l_strategyset+ "game_decision "+i.getname()+" "+j.getname());
 
                 i.beliefbase().remove( CLiteral.from("force", CRawTerm.from( 3.0 ) ) );
                 i.setBehavior(l_strategyset.get(0));
@@ -291,11 +289,8 @@ public final class CHostAgent extends IBaseAgent<CHostAgent>
                         m_env.setStrategy(m.get(1).getname(), l_strategyset.get(0) );
                         m.get(1).getCurrentlyPlayingWith().add(j);
                         j.getCurrentlyPlayingWith().add(m.get(1));
-                        //System.out.println("check +" +j.getnumberofgoalpoints());
 
-                    } // till here
-
-
+                    }
 
                 //to all pedestrians currently on car i's FOV
                 if ( !i.get_competitiveUserList().isEmpty() && !l_strategyset.isEmpty() )
@@ -429,7 +424,7 @@ public final class CHostAgent extends IBaseAgent<CHostAgent>
         int[] columnCheck = {0};
         int l_stopped = p_self.getCurrentBehavior() == 1 ? 1 : 0;
         Vector2d l_desireddirection = CVector.direction( p_self.getGoalposition(), p_self.getPosition() );
-        double l_distance =  CVector.subtract( p_self.getPosition(), p_other.getPosition()).length() - m_randomization*m_pixelpermeter;//7
+        double l_distance =  CVector.subtract( p_self.getPosition(), p_other.getPosition()).length() - 2*m_pixelpermeter;//7
         double l_angle = CForce.getViewAngle( l_desireddirection.x, l_desireddirection.y,
                 ( p_other.getPosition().x - p_self.getPosition().x), ( p_other.getPosition().y - p_self.getPosition().y ) );
 
@@ -443,10 +438,6 @@ public final class CHostAgent extends IBaseAgent<CHostAgent>
         l_angle = 5;
         else if ((l_angle < 112 && l_angle > 90 ) ||  (l_angle < 270 && l_angle > 248 ))
         l_angle = 4;
-        /*else if ((l_angle <= 132 && l_angle >= 112 ) ||  (l_angle <= 248 && l_angle >= 228 ))
-        l_angle = 3;
-        else if ((l_angle <= 155 && l_angle > 132 ) || (l_angle < 228 && l_angle >= 205 ))
-        l_angle = 2;*/
         else
         l_angle = 1;
 
