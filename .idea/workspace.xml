@@ -6,9 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b258db8c-6c46-4cc3-a18d-5e32ecd579db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mysimulationmodel/simulation/agent/CCarGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mysimulationmodel/simulation/agent/CCarGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mysimulationmodel/simulation/agent/CPedestrianGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mysimulationmodel/simulation/agent/CPedestrianGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mysimulationmodel/simulation/common/CVector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mysimulationmodel/simulation/common/CVector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real_data_tuc.csv" beforeDir="false" afterPath="$PROJECT_DIR$/real_data_tuc.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mysimulationmodel/Genetic_Algorithm_indiv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mysimulationmodel/Genetic_Algorithm_indiv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mysimulationmodel/simulation/CcsvfileWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mysimulationmodel/simulation/common/CCSVFileReaderForGA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mysimulationmodel/simulation/common/CCSVFileReaderForGA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/mysimulationmodel/simulation/CcsvfileWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/mysimulationmodel/simulation/common/CCSVFileReaderForGA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/mysimulationmodel/simulation/common/CCSVFileReaderForGA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/mysimulationmodel/simulation/common/CVector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/mysimulationmodel/simulation/common/CVector.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Dongfang_group/mysimulationmodel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CITR-c/social_force" />
   </component>
   <component name="RunManager">
     <configuration name="CMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
