@@ -101,7 +101,7 @@ public class CForce
     {
         p_other.setBehavior(0);
 
-        double l_scalingfactor = 6;//p_other.m_pedtocardistance;//
+        double l_scalingfactor = 6*m_pixelpermeter;//p_other.m_pedtocardistance;//
         Vector2d l_temp = CVector.add( p_self.getPosition(),CVector.scale( l_scalingfactor,
                 CVector.direction( p_self.getGoalposition(), p_self.getPosition() ) ) );
 

@@ -563,8 +563,6 @@ public class IBaseRoadUser extends IBaseAgent<IBaseRoadUser>
             this.m_velocity = CVector.scale(p_speedfactor, CVector.normalize(CVector.add(this.m_velocity,
                     CForce.drivingForce(l_desiredVelocity, this.m_velocity))));
 
-            //Updating Position
-            //m_positionchange = updateVehiclePosition(this.m_velocity);
             this.m_position = CVector.add(m_position, m_velocity);
         }
 
